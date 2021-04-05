@@ -16,7 +16,7 @@ SRC_URI = "git://git@github.com/armando-jp/aesd-final-project-server.git;protoco
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "2d82f0dcde895501764bafe44bb2241cc9eb928a"
+SRCREV = "d2eaf5115647d863baf2d8ac0460a32ffa0e906f"
 
 S = "${WORKDIR}/git"
 
@@ -36,4 +36,3 @@ do_install () {
 	# Specify install commands here
 	:
 }
-
