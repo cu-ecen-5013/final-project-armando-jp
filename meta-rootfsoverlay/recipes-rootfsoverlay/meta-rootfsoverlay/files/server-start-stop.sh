@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#place me in /etc/rcS.d/ as S99server-start-stop.sh
+# ORRRR /etc/init.d/ as S99server-start-stop.sh
 # start the service aesdsocket
 start ()
 {

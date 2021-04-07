@@ -18,11 +18,9 @@ SRC_URI = "git://git@github.com/armando-jp/aesd-final-project-server.git;protoco
 PV = "1.0+git${SRCPV}"
 SRCREV = "1ce365edba378317691ed379087ed7974db00206"
 
-#FILES_${PN} += "${bindir}/TestFolder"
 FILES_${PN} += "${bindir}/server"
 
 S = "${WORKDIR}/git"
-#CFLAGS_prepend = "-I${S}/server/src"
 
 do_compile () {
 	oe_runmake -C ${S}/server/src
@@ -31,8 +29,5 @@ do_compile () {
 do_install () {
 	install -d ${D}${bindir}
 	install -m 0755 ${S}/server/src/server ${D}${bindir}
-
-	#install -d ${D}${sysconfdir}/init.d
-	#install -m 0755 ${S}/aesdsocket-start-stop.sh ${D}${sysconfdir}/init.d
 	:
 }
