@@ -16,23 +16,23 @@ SRC_URI = "git://git@github.com/armando-jp/aesd-final-project-server.git;protoco
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "d2eaf5115647d863baf2d8ac0460a32ffa0e906f"
+SRCREV = "1ce365edba378317691ed379087ed7974db00206"
+
+#FILES_${PN} += "${bindir}/TestFolder"
+FILES_${PN} += "${bindir}/server"
 
 S = "${WORKDIR}/git"
-
-# NOTE: no Makefile found, unable to determine what needs to be done
-
-do_configure () {
-	# Specify any needed configure commands here
-	:
-}
+#CFLAGS_prepend = "-I${S}/server/src"
 
 do_compile () {
-	# Specify compilation commands here
-	:
+	oe_runmake -C ${S}/server/src
 }
 
 do_install () {
-	# Specify install commands here
+	install -d ${D}${bindir}
+	install -m 0755 ${S}/server/src/server ${D}${bindir}
+
+	#install -d ${D}${sysconfdir}/init.d
+	#install -m 0755 ${S}/aesdsocket-start-stop.sh ${D}${sysconfdir}/init.d
 	:
 }
