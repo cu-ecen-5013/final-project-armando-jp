@@ -5,13 +5,13 @@
 # start the service aesdsocket
 start ()
 {
-    echo "Starting final project server"
+    echo ">>>>>>>>>>>>>>>> STARTING FINAL PROJECT SERVER"
     start-stop-daemon -S -n server -a /usr/bin/server -- -d
 }
 
 stop()
 {
-    echo "Starting final project server"
+    echo ">>>>>>>>>>>>>>>> STOPPING FINAL PROJECT SERVER"
     start-stop-daemon -K -n server
 }
 
