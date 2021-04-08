@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #place me in /etc/init.d/
 #enable pin 27 on P9 as an output and set to 1 (HIGH)
