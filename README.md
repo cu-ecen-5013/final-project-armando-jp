@@ -6,3 +6,5 @@ This repository contains the final project submission by Armando Pinales for ECE
 [Project Overview](https://github.com/cu-ecen-5013/final-project-armando-jp/wiki/Project-Overview)
 
 [Project Schedule](https://github.com/cu-ecen-5013/final-project-armando-jp/wiki/Project-Schedule)
+
+[Server Repo](https://github.com/armando-jp/aesd-final-project-server)
