@@ -12,11 +12,12 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
+
 SRC_URI = "git://git@github.com/armando-jp/aesd-final-project-server.git;protocol=ssh"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "d0bec50d6e190e0e29f9e512f3b6d26adce2ce12"
+SRCREV = "c2b4a0108dd1c2eba7bbe8dfb3d1e8e4ecf86e7b"
 
 FILES_${PN} += "${bindir}/server"
 
