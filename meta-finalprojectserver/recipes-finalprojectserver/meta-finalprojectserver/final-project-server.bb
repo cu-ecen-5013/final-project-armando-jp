@@ -17,7 +17,7 @@ SRC_URI = "git://git@github.com/armando-jp/aesd-final-project-server.git;protoco
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "c2b4a0108dd1c2eba7bbe8dfb3d1e8e4ecf86e7b"
+SRCREV = "46cf09d098e1ca6efb895457353eb73ea0c6a6fd"
 
 FILES_${PN} += "${bindir}/server"
 
